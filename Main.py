@@ -11,4 +11,4 @@ def insert():
     return 'This a simple endpoint to test insert data.'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
