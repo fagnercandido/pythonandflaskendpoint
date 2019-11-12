@@ -2,17 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/info', methods = ['GET'])
+@app.route('/')
+def index():
+    return 'Welcome to the Jungle.'
+
+@app.route('/info')
 def info():
     return 'This a simple endpoint to test and provides information about things.'
-
-@app.route('/insert', methods = ['POST'])
-def insert():
-    return 'This a simple endpoint to test insert data.'
-
-@app.route('/', methods = ['GET'])
-def insert():
-    return 'Welcome to the Jungle.'
 
 if __name__ == '__main__':
     app.run()
