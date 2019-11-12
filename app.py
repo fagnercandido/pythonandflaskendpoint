@@ -11,4 +11,4 @@ def info():
     return 'This a simple endpoint to test and provides information about things.'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
