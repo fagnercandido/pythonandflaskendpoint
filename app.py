@@ -10,5 +10,9 @@ def info():
 def insert():
     return 'This a simple endpoint to test insert data.'
 
+@app.route('/', methods = ['GET'])
+def insert():
+    return 'Welcome to the Jungle.'
+
 if __name__ == '__main__':
     app.run()
